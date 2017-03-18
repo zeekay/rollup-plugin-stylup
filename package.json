@@ -11,7 +11,7 @@
     "stylus": "~0.54.5"
   },
   "devDependencies": {
-    "cake-bundle": "0.1.5",
+    "cake-bundle": "0.1.6",
     "cake-outdated": "0.1.8",
     "cake-publish": "0.1.5",
     "cake-test": "0.1.0",
