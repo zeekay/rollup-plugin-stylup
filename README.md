@@ -1,5 +1,7 @@
 # rollup-plugin-stylup
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zeekay/rollup-plugin-stylup.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/zeekay/rollup-plugin-stylup.svg?branch=master)](https://travis-ci.org/zeekay/rollup-plugin-stylup)
 
 A Rollup.js plugin to compile Stylus.
