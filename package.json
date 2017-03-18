@@ -1,0 +1,49 @@
+{
+  "name": "rollup-plugin-stylup",
+  "description": "A Rollup.js plugin to compile Stylus and inject CSS Modules",
+  "version": "1.2.8",
+  "author": "Zach Kelling <z@zeekay.io> (zeekay.io)",
+  "bugs": {
+    "url": "https://github.com/zeekay/rollup-plugin-stylup/issues"
+  },
+  "dependencies": {
+    "rollup-pluginutils": "2.0.1",
+    "stylus": "~0.54.5"
+  },
+  "devDependencies": {
+    "cake-bundle": "0.1.5",
+    "cake-outdated": "0.1.8",
+    "cake-publish": "0.1.5",
+    "cake-test": "0.1.0",
+    "cake-version": "0.1.9",
+    "coffee-script": "1.12.4",
+    "mocha": "~3.2.0",
+    "shortcake": "1.2.5"
+  },
+  "files": [
+    "dist/"
+  ],
+  "homepage": "https://github.com/zeekay/rollup-plugin-stylup",
+  "jsnext:main": "dist/rollup-plugin-stylup.es.js",
+  "module": "dist/rollup-plugin-stylup.es.js",
+  "keywords": [
+    "css",
+    "css-modules",
+    "rollup-plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/rollup-plugin-stylup.cjs.js",
+  "peerDependencies": {
+    "rollup": ">=0.34.1 <1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeekay/rollup-plugin-stylup.git"
+  },
+  "scripts": {
+    "build": "cake build",
+    "prepublish": "npm run build",
+    "pretest": "npm run build",
+    "test": "mocha"
+  }
+}
