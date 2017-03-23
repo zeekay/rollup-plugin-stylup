@@ -16,8 +16,9 @@ task 'clean', 'clean project', ->
 
 task 'build', 'build project', ->
   bundle.write
-    entry:   'src/index.coffee'
-    formats: ['cjs', 'es']
+    entry:    'src/index.coffee'
+    formats:  ['cjs', 'es']
+    external: true
 
 task 'watch', 'watch project', ->
   build = (filename) ->

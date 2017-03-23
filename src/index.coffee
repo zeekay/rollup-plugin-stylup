@@ -1,17 +1,14 @@
-import fs             from 'fs'
-import path           from 'path'
-import stylus         from 'stylus'
-import {createFilter} from 'rollup-pluginutils'
+import fs     from 'fs'
+import path   from 'path'
+import stylus from 'stylus'
 
 export default (opts = {}) ->
-  filter     = createFilter(opts.include, opts.exclude)
-  sourceMap  = opts.sourceMap ? false
-  plugins    = opts.plugins   ? []
+  opts.plugins   ?= []
+  opts.sourceMap ?= true
 
   name: 'stylup'
   transform: (code, id) ->
-    if !filter(id) or path.extname(id) != '.styl'
-      return null
+    return if (path.extname id) != '.styl'
 
     relativePath = path.relative process.cwd(), id
 
@@ -19,7 +16,7 @@ export default (opts = {}) ->
     style.set 'filename', relativePath
 
     if sourceMap
-      style.set 'sourcemap', inline: true
+      style.set 'sourcemap', comment: false
 
     for plugin in plugins
       try
@@ -33,7 +30,6 @@ export default (opts = {}) ->
         return reject err if err?
 
         resolve
-          id:  "#{id}.css"
+          id:   "#{id}.css"
           code: "export default #{JSON.stringify(css)};"
-          map:
-            mappings: ''
+          map:  style.sourcemap
