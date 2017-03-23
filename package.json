@@ -7,11 +7,11 @@
     "url": "https://github.com/zeekay/rollup-plugin-stylup/issues"
   },
   "devDependencies": {
-    "cake-bundle": "0.1.5",
-    "cake-outdated": "0.1.8",
-    "cake-publish": "0.1.5",
+    "cake-bundle": "0.2.6",
+    "cake-outdated": "0.1.15",
+    "cake-publish": "0.1.10",
     "cake-test": "0.1.0",
-    "cake-version": "0.1.9",
+    "cake-version": "0.1.11",
     "coffee-script": "1.12.4",
     "mocha": "3.2.0",
     "shortcake": "1.2.5"
