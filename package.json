@@ -37,8 +37,7 @@
   },
   "scripts": {
     "build": "cake build",
-    "prepublish": "npm run build",
-    "pretest": "npm run build",
+    "prepublishOnly": "cake build",
     "test": "mocha"
   }
 }
