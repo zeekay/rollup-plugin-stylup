@@ -15,10 +15,10 @@ export default (opts = {}) ->
     style = stylus code
     style.set 'filename', relativePath
 
-    if sourceMap
+    if opts.sourceMap
       style.set 'sourcemap', comment: false
 
-    for plugin in plugins
+    for plugin in opts.plugins
       try
         style.use plugin
       catch err
