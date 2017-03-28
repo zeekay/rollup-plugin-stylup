@@ -1,9 +1,14 @@
-import path   from 'path'
-import stylus from 'stylus'
+import path from 'path'
 
 export default (opts = {}) ->
   opts.plugins   ?= []
   opts.sourceMap ?= true
+
+  try
+    stylus = require 'stylus'
+  catch err
+    console.error 'Stylus unavailable, `npm install stylus` to transform Stylus files'
+    return
 
   name: 'stylup'
   transform: (code, id) ->
