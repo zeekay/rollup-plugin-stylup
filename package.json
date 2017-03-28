@@ -23,7 +23,7 @@
   "jsnext:main": "dist/lib.mjs",
   "peerDependencies": {
     "rollup": ">=0.34.1 <1",
-    "stylus": "^0.54.5"
+    "stylus": ">=0.54.5 <1"
   },
   "devDependencies": {
     "cake-bundle": "0.2.11",
