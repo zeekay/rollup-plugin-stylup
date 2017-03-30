@@ -8,7 +8,7 @@ export default (opts = {}) ->
     stylus = require 'stylus'
   catch err
     console.error 'Stylus unavailable, `npm install stylus` to transform Stylus files'
-    return
+    return name: 'stylup-disabled'
 
   name: 'stylup'
   transform: (code, id) ->
