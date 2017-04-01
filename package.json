@@ -15,12 +15,12 @@
     "rollup-plugin"
   ],
   "files": [
-    "dist/",
+    "lib/",
     "src/"
   ],
-  "main": "dist/lib.js",
-  "module": "dist/lib.mjs",
-  "jsnext:main": "dist/lib.mjs",
+  "main": "lib/rollup-plugin-stylup.js",
+  "module": "lib/rollup-plugin-stylup.mjs",
+  "jsnext:main": "lib/rollup-plugin-stylup.mjs",
   "peerDependencies": {
     "rollup": ">=0.34.1 <1",
     "stylus": ">=0.54.5 <1"
