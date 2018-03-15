@@ -22,22 +22,20 @@
   "module": "lib/rollup-plugin-stylup.mjs",
   "jsnext:main": "lib/rollup-plugin-stylup.mjs",
   "peerDependencies": {
-    "rollup": ">=0.34.1 <1",
-    "stylus": ">=0.54.5 <1"
+    "rollup": ">=0.34.1 <1"
   },
   "devDependencies": {
-    "cake-bundle": "0.2.16",
-    "cake-outdated": "0.1.16",
-    "cake-publish": "0.1.10",
-    "cake-test": "0.1.0",
-    "cake-version": "0.1.14",
-    "coffee-script": "1.12.4",
+    "coffeescript": "1.12.4",
     "mocha": "3.2.0",
-    "shortcake": "1.2.7"
+    "rollup": "^0.56.5",
+    "sake-bundle": "^0.6.3",
+    "sake-outdated": "^0.1.28",
+    "sake-publish": "^0.1.16",
+    "sake-version": "^0.1.19"
   },
   "scripts": {
-    "build": "cake build",
-    "prepublishOnly": "cake build",
+    "build": "sake build",
+    "prepublishOnly": "rake build",
     "test": "mocha"
   }
 }
