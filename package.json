@@ -25,11 +25,11 @@
     "rollup": ">=0.34.1 <1"
   },
   "devDependencies": {
-    "coffeescript": "1.12.4",
-    "mocha": "3.2.0",
-    "rollup": "^0.56.5",
+    "coffeescript": "2.2.3",
+    "mocha": "5.0.4",
+    "rollup": "^0.57.0",
     "sake-bundle": "^0.6.3",
-    "sake-outdated": "^0.1.28",
+    "sake-outdated": "^0.2.1",
     "sake-publish": "^0.1.16",
     "sake-test": "^0.1.5",
     "sake-version": "^0.1.19",
