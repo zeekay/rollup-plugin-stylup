@@ -19,8 +19,8 @@
     "src/"
   ],
   "main": "lib/rollup-plugin-stylup.js",
-  "module": "lib/rollup-plugin-stylup.mjs",
-  "jsnext:main": "lib/rollup-plugin-stylup.mjs",
+  "module": "lib/rollup-plugin-stylup.es.js",
+  "jsnext:main": "lib/rollup-plugin-stylup.es.js",
   "peerDependencies": {
     "rollup": ">=0.34.1 <1"
   },
