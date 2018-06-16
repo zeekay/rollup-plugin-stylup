@@ -37,7 +37,7 @@
   },
   "scripts": {
     "build": "sake build",
-    "prepublishOnly": "rake build",
+    "prepublishOnly": "sake build",
     "test": "mocha"
   }
 }
