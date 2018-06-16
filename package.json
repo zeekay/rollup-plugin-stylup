@@ -1,7 +1,7 @@
 {
   "name": "@zeekay/rollup-plugin-stylus",
   "description": "A Rollup.js plugin to compile Stylus files",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "author": "Zach Kelling <z@zeekay.io>",
   "license": "MIT",
   "homepage": "https://github.com/zeekay/rollup-plugin-stylus",
