@@ -1,13 +1,13 @@
 {
-  "name": "rollup-plugin-stylup",
+  "name": "@zeekay/rollup-plugin-stylus",
   "description": "A Rollup.js plugin to compile Stylus files",
   "version": "1.3.5",
   "author": "Zach Kelling <z@zeekay.io>",
   "license": "MIT",
-  "homepage": "https://github.com/zeekay/rollup-plugin-stylup",
-  "repository": "github:zeekay/rollup-plugin-stylup",
+  "homepage": "https://github.com/zeekay/rollup-plugin-stylus",
+  "repository": "github:zeekay/rollup-plugin-stylus",
   "bugs": {
-    "url": "https://github.com/zeekay/rollup-plugin-stylup/issues"
+    "url": "https://github.com/zeekay/rollup-plugin-stylus/issues"
   },
   "keywords": [
     "css",
@@ -18,9 +18,9 @@
     "lib/",
     "src/"
   ],
-  "main": "lib/rollup-plugin-stylup.js",
-  "module": "lib/rollup-plugin-stylup.es.js",
-  "jsnext:main": "lib/rollup-plugin-stylup.es.js",
+  "main": "lib/rollup-plugin-stylus.js",
+  "module": "lib/rollup-plugin-stylus.es.js",
+  "jsnext:main": "lib/rollup-plugin-stylus.es.js",
   "peerDependencies": {
     "rollup": ">=0.34.1 <1"
   },
