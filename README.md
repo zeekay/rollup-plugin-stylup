@@ -1,13 +1,13 @@
-# rollup-plugin-stylup
+# @zeekay/rollup-plugin-stylus
 
-[![Build Status](https://travis-ci.org/zeekay/rollup-plugin-stylup.svg?branch=master)](https://travis-ci.org/zeekay/rollup-plugin-stylup)
+[![Build Status](https://travis-ci.org/zeekay/rollup-plugin-stylus.svg?branch=master)](https://travis-ci.org/zeekay/rollup-plugin-stylus)
 
 A Rollup.js plugin to compile Stylus.
 
 ## Install
 
 ```bash
-npm install rollup-plugin-stylup --save-dev
+npm install @zeekay/rollup-plugin-stylus --save-dev
 ```
 
 ## Usage
@@ -15,12 +15,12 @@ npm install rollup-plugin-stylup --save-dev
 Add the following code to your project's `rollup.config.js`:
 
 ```js
-import stylup from 'rollup-plugin-stylup';
+import stylus from '@zeekay/rollup-plugin-stylus';
 
 export default {
   entry: 'index.js',
   plugins: [
-    stylup({
+    stylus({
       plugins: [],
     })
   ]
